@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" ,initial-scale=1.0>
+    <title>BUPANG BAKERY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+</head>
+<body>	
+    <div class="banner1">
+        <h1 class="ban1">Like us on Instagram and get RM5 off your first order!</h1>
+      </div>
+      
+      <nav class="navbar">
+        <div class="container">
+          <a href="../html/home.html" class="logo">
+            <img src="../img/logo.jpg" alt="logo">
+          </a>
+      
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      
+          <ul id="nav-links">
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="../html/about.html" class="active">About</a></li>
+            <li><a href="../html/menu.html">Menu</a></li>
+            <li><a href="../html/other.html">Others</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+            <li class="cart-container">
+              <a href="#" id="cartIcon" class="cart-icon">
+                <i class="fa fa-shopping-cart" style="font-size:28px;color:#6ca96e;"></i>
+                <span id="cartCount">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- CART DRAWER -->
+      <div id="cartOverlay" class="cart-overlay">
+        <div id="cartDrawer" class="cart-drawer">
+          <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span id="closeCartDrawer" class="cart-close">&times;</span>
+          </div>
+          <div id="cartItems" class="cart-items">
+          </div>
+          <div class="cart-footer">
+            <p>Total: RM <span id="cartTotal">0.00</span></p>
+            <button id="checkoutBtn">Checkout</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-banner">
+        <h1 data-aos="zoom-in">ABOUT&nbsp;US</h1>
+      </div>
+
+      <section class="about-hi">
+        <div class="about-history">
+          <h4 class="subtitle" data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom" data-aos-delay="0">OUR STORY</h4>
+          <h2 class="title" data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom" data-aos-delay="100">History of Bupang Bakery</h2>
+          <p data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom" data-aos-delay="200">
+            Bupang Bakery was founded by Ms. Foo in Kulai in 2021 as a one-woman journey in a small home kitchen.
+            With nothing but passion and patience, she hand-shaped every loaf and bagel using traditional slow-fermentation methods.
+            <br><br>In 2024, she opened her own baking studio, continuing her commitment to handmade, low-sugar, oil-free breads —
+            crafted with care, from start to finish.
+          </p>
+          <br>
+        </div>
+        </section>
+        
+        <section class="mission-vision">
+          <div class="mission">
+            <div class="text fade-in-target">
+              <h2>Mission</h2>
+              <p>
+                To raise awareness of natural yeast in Malaysia by offering handmade, healthy baked goods that satisfy cravings without compromising well-being.
+              </p>
+            </div>
+            <div class="image flip-down">
+              <img src="../img/aboutimg1.png" alt="Mission - kneading dough">
+            </div>
+          </div>
+        
+          <div class="vision">
+            <div class="image flip-down">
+              <img src="../img/aboutimg2.png" alt="Vision - bread and flour">
+            </div>
+            <div class="text fade-in-target">
+              <h2>Vision</h2>
+              <p>
+                To make natural yeast more accessible and better understood by Malaysians by showcasing its benefits through
+                high-quality products, education, and meaningful branding.
+              </p>
+            </div>
+          </div>
+        </section>
+      
+          <div class="slider" style="
+              --width: 100px;
+              --height: 40px;
+              --quantity: 17;
+              ">
+              <div class="list">
+                  <div class="item" style="--position: 1"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 2"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 3"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 4"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 5"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 6"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 7"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 8"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 9"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 10"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 11"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 12"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 13"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 14"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 15"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 16"><img src="../img/roll-04.png" alt=""></div>
+                  <div class="item" style="--position: 17"><img src="../img/roll-04.png" alt=""></div>
+              </div>
+          </div>
+      
+        <section class="testimonials-section">
+          <h4 class="subtitle fade-up">TESTIMONIALS</h4>
+          <h2 class="title fade-up">What our customers say</h2>
+        
+          <div class="testimonial-grid">
+            <div class="testimonial-card fade-up">
+              <span class="quote-icon">❝</span>
+              <h4>Delightful Matcha</h4>
+              <p>
+                I tried the Matcha Shiopan for the first time. Soft, fluffy, with just the right matcha flavor and hint of salt. Simple but so satisfying!
+              </p>
+              <img src="../img/testi1.jpeg" alt="Michelle Lim" />
+              <h5>Michelle Lim</h5>
+            </div>
+        
+            <div class="testimonial-card fade-up">
+              <span class="quote-icon">❝</span>
+              <h4>Rich Chocolate Taste</h4>
+              <p>
+                The Genmaicha 80% Dark Chocolate Sourdough has a rich, earthy flavor with perfect balance of bittersweet chocolate and roasted tea.
+              </p>
+              <img src="../img/testi2.jpeg" alt="Alex" />
+              <h5>Alex</h5>
+            </div>
+        
+            <div class="testimonial-card fade-up">
+              <span class="quote-icon">❝</span>
+              <h4>Fragrant & Soft</h4>
+              <p>
+                The Cocoa Strawberry Scone is soft and fragrant, with 80% dark chocolate chips and sweet dried strawberries perfectly balanced.
+              </p>
+              <img src="../img/testi3.jpeg" alt="Nichole Tan" />
+              <h5>Nichole Tan</h5>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Taste the Original Section -->
+        <section class="taste-section">
+          <div class="taste-container zoom-out-down">
+            <div class="taste-left">
+              <img src="../img/aboutimg3.jpg" alt="Croissant">
+            </div>
+            <div class="taste-right">
+              <h2>Taste the Original</h2>
+              <p>Explore our full range of breads today.</p>
+              <a href="../html/menu.html" class="btn2">View Menu</a>
+            </div>
+          </div>
+        </section>
+      
+        <!-- Promo Section -->
+        <section class="promo-section">
+          <div class="promo-card fade-up">
+            <div class="promo-content">
+              <div class="promo-text">
+                <br><br>
+                <h3><span>30%  </span>OFF</h3>
+                <p>Order now and get 30% off with the code below.<br>
+                (Valid for purchases of RM50 and above)</p>
+                <p class="code">Code: <strong>BUPANG30</strong></p>
+              </div>
+              <div class="promo-image">
+                <img src="../img/aboutimg4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+      
+          <div class="promo-card fade-up">
+            <div class="promo-content">
+              <div class="promo-text">
+                <br><br><br>
+                <h3><span>15%</span>OFF</h3>
+                <p>Order our scone online & get 15% off.</p>
+                <p class="code">Code: <strong>BUPANG15</strong></p>
+              </div>
+              <div class="promo-image">
+                <img src="../img/aboutimg5.jpg" alt="Scones">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-section" style="background: linear-gradient(to bottom, #016a3e 70%, #f1efeb 30%);">
+          <div class="cta-content">
+            <div class="cta-text fade-in-target">
+              <h2>Taste the Difference,<br>Contact Us Today.</h2>
+              <p>Fill it in and we'll take care of the rest!</p>
+              <a href="../html/contact.html" class="cta-button">Contact Now</a>
+            </div>
+            <div class="cta-icon fade-in-target">
+              <img src="../img/icon5-02.png" alt="">
+            </div>
+          </div>
+        </section>
+        
+        <!-- Footer Section -->
+       <footer class="footer-section">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <a href="../html/home.html"><img src="../img/logo.jpg" alt="Bupang Bakery logo"></a>
+            <div class="social-icons">
+              <a href="https://wa.me/+60108875898" target="_blank" class="social-icon whatsapp">
+                <img src="../img/whatsapp.png" alt="whatsapp">
+              </a>
+              <a href="https://www.instagram.com/bupang.bakeee/" target="_blank" class="social-icon instagram">
+                <img src="../img/insta.png" alt="instagram">
+              </a>
+              <a href="https://www.facebook.com/bupang.bakeee/?_rdr" target="_blank" class="social-icon facebook">
+                <img src="../img/fb.png" alt="facebook">
+              </a>
+            </div>
+          </div>
+      
+          <div class="footer-links">
+            <h3>Quick link</h3>
+            <ul>
+              <li><a href="../html/home.html">Home</a></li>
+              <li><a href="../html/about.html">About</a></li>
+              <li><a href="../html/menu.html">Menu</a></li>
+              <li><a href="../html/other.html">Others</a></li>
+              <li><a href="../html/contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-newsletter">
+            <h3>Join our newsletter</h3>
+            <p>Stay up to date with our latest bread varieties, seasonal specials, and exclusive offers.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" id="email" placeholder="Enter your email address..." required>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        
+         <!-- Popup message -->
+         <div id="popupMessage" class="popup-message"></div>
+          
+         <div class="footer-copyright">
+           Copyright © 2024. Bupang Bakery. All rights reserved.
+         </div>
+       </footer>
+
+       
+
+        <button id="backToTop" title="Go to top">
+          <i class="fa fa-chevron-up"></i>
+        </button>
+
+        <script src="../java.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                } else {
+                  entry.target.classList.remove("visible");
+                }
+              });
+            });
+
+            const targets = document.querySelectorAll('.fade-in-target');
+            targets.forEach((el) => observer.observe(el));
+            </script>
+            <script>
+            AOS.init({
+              duration: 1200,
+              once: false,   
+              mirror: true,   
+              easing: 'ease-in-out', 
+            });
+
+            AOS.init({
+            duration: 1200,
+            once: false,   
+            mirror: true,   
+            easing: 'ease-in-out', 
+          });
+      
+          AOS.init({
+          duration: 1000,
+          once: false,
+          mirror: true,
+        });
+        
+        </script>
+  </body>
+</html>
+  

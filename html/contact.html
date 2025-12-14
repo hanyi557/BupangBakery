@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" ,initial-scale=1.0>
+    <title>BUPANG BAKERY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+</head>
+<body>	
+    <div class="banner1">
+        <h1 class="ban1">Like us on Instagram and get RM5 off your first order!</h1>
+    </div>
+      
+      <nav class="navbar">
+        <div class="container">
+          <a href="../html/home.html" class="logo">
+            <img src="../img/logo.jpg" alt="logo">
+          </a>
+      
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      
+          <ul id="nav-links">
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/menu.html">Menu</a></li>
+            <li><a href="../html/other.html">Others</a></li>
+            <li><a href="../html/contact.html" class="active">Contact</a></li>
+            <li class="cart-container">
+              <a href="#" id="cartIcon" class="cart-icon">
+                <i class="fa fa-shopping-cart" style="font-size:28px;color:#6ca96e;"></i>
+                <span id="cartCount">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- CART DRAWER -->
+      <div id="cartOverlay" class="cart-overlay">
+        <div id="cartDrawer" class="cart-drawer">
+          <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span id="closeCartDrawer" class="cart-close">&times;</span>
+          </div>
+          <div id="cartItems" class="cart-items">
+          </div>
+          <div class="cart-footer">
+            <p>Total: RM <span id="cartTotal">0.00</span></p>
+            <button id="checkoutBtn">Checkout</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-banner">
+        <h1 data-aos="zoom-in">Contact&nbsp;Us</h1>
+      </div>
+
+      <section id="contact-section">
+        <div class="contact-container">
+          <!-- Left Column -->
+          <div class="contact-info fade-up">
+            <h3><i class="	fas fa-map-marker-alt"></i> Location</h3>
+            <p>577, Jalan Sulaiman, Taman Kulai, 81000 Kulai, Johor Darul Ta’zim</p>
+      
+            <h3><i class="fa fa-phone"></i> Phone</h3>
+            <p>010-8878598</p>
+      
+            <h3><i class="fa fa-clock-o"></i> Opening Hours</h3>
+            <p>Day: Monday–Saturday<br>Time: 10am–5pm</p>
+      
+            <h3><i class="fa fa-truck"></i> Delivery Coverage</h3>
+            <p>West Malaysia only</p>
+      
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.14503873096!2d103.59954837477831!3d1.6594369983251784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da794e9b7a61d9%3A0x7f28337f2a036200!2sBupang%20Bakery!5e0!3m2!1sen!2smy!4v1765200306287!5m2!1sen!2smy"
+              width="100%"
+              height="200"
+              style="border:0; border-radius: 10px; margin-top: 15px;"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <!-- Right Column -->
+
+          <!-- Success Message -->
+          <div id="successMessage" class="success-message">  Submitted successfully! Thank you for reaching out.</div>
+          <div class="contact-form fade-up">
+            <h2>Get In Touch</h2>
+            <p>Reach out to us here and we'll get back to you as soon as we can. Let’s make every bite warmer the Bupang way!</p>
+            <form action="#" method="post">
+              <input type="text" placeholder="Your Name" required>
+              <input type="email" placeholder="Your Email" required>
+              <input type="tel" placeholder="Your Phone" required>
+              <textarea rows="4" placeholder="Your Message" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      
+        
+      </section>
+
+      <!-- Bread Qs section -->
+      <section class="breadqs-wrapper">
+        <div class="breadqs-section">
+          <h2 data-aos="fade-up" data-aos-delay="0">Bread Qs?</h2>
+          <p data-aos="fade-up" data-aos-delay="100">
+            Got questions about our breads or your order? We’re here to help
+          </p>
+          <a href="../html/other.html#faq" class="btnqs" 
+             data-aos="fade-up" data-aos-delay="200">
+             View More
+          </a>
+        </div>
+      </section>
+      
+      <section class="cta-section" style="background: linear-gradient(to bottom, #016a3e 70%, #f1efeb 30%);"></section>
+      
+      <footer class="footer-section">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <a href="../html/home.html"><img src="../img/logo.jpg" alt="Bupang Bakery logo"></a>
+            <div class="social-icons">
+              <a href="https://wa.me/+60108875898" target="_blank" class="social-icon whatsapp">
+                <img src="../img/whatsapp.png" alt="whatsapp">
+              </a>
+              <a href="https://www.instagram.com/bupang.bakeee/" target="_blank" class="social-icon instagram">
+                <img src="../img/insta.png" alt="instagram">
+              </a>
+              <a href="https://www.facebook.com/bupang.bakeee/?_rdr" target="_blank" class="social-icon facebook">
+                <img src="../img/fb.png" alt="facebook">
+              </a>
+            </div>
+          </div>
+      
+          <div class="footer-links">
+            <h3>Quick link</h3>
+            <ul>
+              <li><a href="../html/home.html">Home</a></li>
+              <li><a href="../html/about.html">About</a></li>
+              <li><a href="../html/menu.html">Menu</a></li>
+              <li><a href="../html/other.html">Others</a></li>
+              <li><a href="../html/contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-newsletter">
+            <h3>Join our newsletter</h3>
+            <p>Stay up to date with our latest bread varieties, seasonal specials, and exclusive offers.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" id="email" placeholder="Enter your email address..." required>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      
+        <!-- Popup message -->
+        <div id="popupMessage" class="popup-message"></div>
+      
+        <div class="footer-copyright">
+          Copyright © 2024. Bupang Bakery. All rights reserved.
+        </div>
+      </footer>
+
+      <button id="backToTop" title="Go to top">
+        <i class="fa fa-chevron-up"></i>
+      </button>
+
+      <script src="../java.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                } else {
+                  entry.target.classList.remove("visible");
+                }
+              });
+            });
+
+            const targets = document.querySelectorAll('.fade-in-target');
+            targets.forEach((el) => observer.observe(el));
+          AOS.init({
+            duration: 1200,
+            once: false,   
+            mirror: true,   
+            easing: 'ease-in-out', 
+          });
+      
+          AOS.init({
+          duration: 1000,
+          once: false,
+          mirror: true
+        });
+        AOS.init({
+          duration: 800,       
+          easing: 'ease-out-cubic',
+          once: false,       
+          mirror: true         
+  });
+        </script>
+</body>
+</html>
+

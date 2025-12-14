@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" ,initial-scale=1.0>
+    <title>BUPANG BAKERY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+</head>
+<body>	
+    <div class="banner1">
+        <h1 class="ban1">Like us on Instagram and get RM5 off your first order!</h1>
+    </div>
+      
+      <nav class="navbar">
+        <div class="container">
+          <a href="../html/home.html" class="logo">
+            <img src="../img/logo.jpg" alt="logo">
+          </a>
+      
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      
+          <ul id="nav-links">
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/menu.html" class="active">Menu</a></li>
+            <li><a href="../html/other.html">Others</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+            <li class="cart-container">
+              <a href="#" id="cartIcon" class="cart-icon">
+                <i class="fa fa-shopping-cart" style="font-size:28px;color:#6ca96e;"></i>
+                <span id="cartCount">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <div class="menu-banner">
+        <h1 data-aos="zoom-in">MENU</h1>
+      </div>
+
+      <div class="announcement">
+        <div class="scroll-container">
+          <div class="scroll-text">
+            We deliver to West Malaysia only – baked fresh every week! &nbsp; • &nbsp;
+            We deliver to West Malaysia only – baked fresh every week! &nbsp; • &nbsp;
+            We deliver to West Malaysia only – baked fresh every week! &nbsp; • &nbsp;
+          </div>
+          <div class="scroll-text">
+            We deliver to West Malaysia only – baked fresh every week! &nbsp; • &nbsp;
+            We deliver to West Malaysia only – baked fresh every week! &nbsp; • &nbsp;
+            We deliver to West Malaysia only – baked fresh every week! &nbsp; • &nbsp;
+          </div>
+        </div>
+      </div>
+
+      <section class="menu-section">
+        <div class="menu-filter">
+          <div class="mobile-filter-icon" id="mobileFilterBtn">
+            <i class="material-icons">tune</i>
+          </div>
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="week">Week's specials</button>
+          <button class="filter-btn" data-category="artisan">Artisan Breads</button>
+          <button class="filter-btn" data-category="boiled">Boiled Breads</button>
+          <button class="filter-btn" data-category="sweet">Sweet Bakes</button>
+          <button class="filter-btn" data-category="asian">Asian Soft Buns</button>
+        </div>
+
+        <div class="filter-drawer" id="filterDrawer">
+          <div class="filter-drawer-header">
+            <span id="drawerClose">&times;</span>
+          </div>
+          <div class="filter-drawer-content">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="week">Week's specials</button>
+            <button class="filter-btn" data-category="artisan">Artisan Breads</button>
+            <button class="filter-btn" data-category="boiled">Boiled Breads</button>
+            <button class="filter-btn" data-category="sweet">Sweet Bakes</button>
+            <button class="filter-btn" data-category="asian">Asian Soft Buns</button>
+          </div>
+        </div>
+          
+    
+        <div class="containerweek">
+          <div class="products-grid">
+            <div class="product-card" data-category="boiled">
+              <div class="product-image">
+                <img src="../img/pistachio_matcha_pretzel1.png" class="default-img" alt="">
+                <img src="../img/pistachio_matcha_pretzel2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Pistachio Matcha Pretzel</h3>
+              <button class="explore-btn"
+              data-desc="A delightful twist on the classic pretzel — soft, chewy, and infused with fragrant matcha for a subtle earthy flavor."
+              data-price="RM 10.00">View More</button>
+            </div>
+
+            <div class="product-card" data-category="sweet">
+              <div class="product-image">
+                <img src="../img/rikka_black_tea_scone1.png" class="default-img" alt="">
+                <img src="../img/rikka_black_tea_scone2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Rikka Black Tea Lemon<br>Cream Cheese Scone</h3>
+              <button class="explore-btn"
+              data-desc="Fragrant black tea scone with a hint of lemon and a creamy, tangy cream cheese center."
+              data-price="RM 9.50">View More</button>
+            </div>
+            
+            <div class="product-card" data-category="artisan">
+              <div class="product-image">
+                <img src="../img/winesoaked_sourdoughfrenchroll1.png" class="default-img" alt="">
+                <img src="../img/winesoaked_sourdoughfrenchroll2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Wine-Soaked Cranberry<br>Cream Cheese Sourdough<br>French Roll</h3>
+              <button class="explore-btn"
+              data-desc="A soft sourdough roll filled with creamy cheese and studded with wine-soaked cranberries for a rich, fruity twist."
+              data-price="RM 9.50">View More</button>
+            </div>
+
+            <div class="product-card" data-category="artisan">
+              <div class="product-image">
+                <img src="../img/Genmaicha Dark choclolate_sourdough1.png" class="default-img" alt="">
+                <img src="../img/Genmaicha Dark choclolate_sourdough1.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Genmaicha 80% Dark<br>Choco Sourdough</h3>
+              <button class="explore-btn"
+              data-desc="Crafted with Japanese high protein flour, T170 rye flour, genmaicha powder, 80% dark chocolate chips."
+              data-price="RM 29.00">View More</button>
+            </div>
+
+            <div class="product-card" data-category="artisan">
+              <div class="product-image">
+                <img src="../img/KimchiCheeseCiabatta1.png" class="default-img" alt="">
+                <img src="../img/KimchiCheeseCiabatta2.png"  class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Kimchi Cheese Ciabatta</h3>
+              <button class="explore-btn"
+              data-desc="A flavorful ciabatta filled with spicy kimchi and melted cheese, blending tangy heat with savory richness in every bite."
+              data-price="RM 9.00">View More</button>
+            </div>
+  
+            <div class="product-card" data-category="boiled">
+              <div class="product-image">
+                <img src="../img/HojichaDarkChocolatePretzel1.png" class="default-img" alt="">
+                <img src="../img/HojichaDarkChocolatePretzel2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Hojicha Dark Chocolate<br>Pretzel</h3>
+              <button class="explore-btn"
+              data-desc="Soft and chewy pretzel infused with roasted hojicha tea and filled with rich dark chocolate for a warm, toasty, and bittersweet flavor."
+              data-price="RM 8.50">View More</button>
+            </div>
+
+            <div class="product-card" data-category="artisan">
+              <div class="product-image">
+                <img src="../img/blacksesame_ciabatta1.png" class="default-img" alt="">
+                <img src="../img/blacksesame_ciabatta2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Black Sesame Ciabatta</h3>
+              <button class="explore-btn"
+              data-desc="A rustic ciabatta loaf infused with nutty black sesame seeds, offering a fragrant aroma and a subtly savory, crunchy texture."
+              data-price="RM 7.50">View More</button>
+            </div>
+
+            <div class="product-card" data-category="week">
+              <span class="badge">Monday</span>
+              <div class="product-image">
+                <img src="../img/DoubleMatchaCreamCheeseFrenchRoll1.png" class="default-img" alt="">
+                <img src="../img/DoubleMatchaCreamCheeseFrenchRoll2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Double Matcha Cream<br>Cheese French Roll</h3>
+              <button class="explore-btn"
+              data-desc="A soft French roll filled with rich, creamy double matcha cream cheese, offering a sweet, earthy, and indulgent flavor in every bite."
+              data-price="RM 9.50">View More</button>
+            </div>
+
+            <div class="product-card" data-category="sweet">
+              <div class="product-image">
+                <img src="../img/pumpkincinnamon_babka1.png"  class="default-img" alt="">
+                <img src="../img/pumpkincinnamon_babka2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Pumpkin Cinnamon<br>Babka</h3>
+              <button class="explore-btn"
+              data-desc="A soft, twisted babka swirled with pumpkin and cinnamon, delivering warm, cozy flavors with a subtly sweet, spiced finish."
+              data-price="RM 11.00">View More</button>
+            </div>
+  
+            <div class="product-card" data-category="artisan">
+              <div class="product-image">
+                <img src="../img/DoubleChocolateSourdough.png"  class="default-img" alt="">
+                <img src="../img/DoubleChocolateSourdough.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Double Chocolate<br>Sourdough</h3>
+              <button class="explore-btn"
+              data-desc="A rich sourdough loaf packed with both dark chocolate, offering a decadent, fudgy, and slightly tangy chocolate experience."
+              data-price="RM 28.00">View More</button>
+            </div>
+
+            <div class="product-card" data-category="boiled">
+              <div class="product-image">
+                <img src="../img/SoyMilkCrumbleBagel1.png"  class="default-img" alt="">
+                <img src="../img/SoyMilkCrumbleBagel2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Soy Milk Crumble<br>Bagel</h3>
+              <button class="explore-btn"
+              data-desc="A soft bagel made with creamy soy milk and topped with a crunchy crumble, offering a subtly sweet and nutty flavor."
+              data-price="RM 7.50">View More</button>
+            </div>
+  
+            <div class="product-card" data-category="sweet">
+              <div class="product-image">
+                <img src="../img/matchabakka.png" class="default-img" alt="">
+                <img src="../img/matchabakka.png"class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Matcha Black Sesame<br>Babka</h3>
+              <button class="explore-btn"
+              data-desc="A soft, twisted babka infused with earthy matcha and topped with a crunchy black sesame streusel for a nutty."
+              data-price="RM 11.00">View More</button>
+            </div>
+  
+            <div class="product-card" data-category="week">
+              <span class="badge">Sunday</span>
+              <div class="product-image">
+                <img src="../img/SpicyPorkFlossTomatoCheeseBagel1.png" class="default-img" alt="">
+                <img src="../img/SpicyPorkFlossTomatoCheeseBagel2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Spicy Pork Floss Tomato<br>Cheese Bagel</h3>
+              <button class="explore-btn"
+              data-desc="A savory bagel topped with spicy pork floss, tangy tomato and melted cheese."
+              data-price="RM 8.50">View More</button>
+            </div>
+
+            <div class="product-card" data-category="boiled">
+              <div class="product-image">
+                <img src="../img/raspberrypretzel1.png" class="default-img" alt="">
+                <img src="../img/raspberrypretzel2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Raspberry Pretzel</h3>
+              <button class="explore-btn"
+              data-desc="A soft, chewy pretzel filled with tangy raspberry compote for a perfect balance of fruity and buttery flavors."
+              data-price="RM 8.50">View More</button>
+            </div>
+
+            <div class="product-card" data-category="week">
+              <span class="badge">Wednesday</span>
+              <div class="product-image">
+                <img src="../img/matchacreamcheese_toast1.png" class="default-img" alt="">
+                <img src="../img/matchacreamcheese_toast2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Matcha Cream Cheese<br>Sourdough Toast (400g)</h3>
+              <button class="explore-btn"
+              data-desc="A fluffy sourdough loaf swirled with rich matcha and smooth cream cheese."
+              data-price="RM 25.00">View More</button>
+            </div>
+  
+            <div class="product-card" data-category="asian">
+              <div class="product-image">
+                <img src="../img/matchashiopan1.png" class="default-img" alt="">
+                <img src="../img/matchashiopan2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Matcha Shiopan</h3>
+              <button class="explore-btn"
+              data-desc="A soft Japanese milk bread infused with premium matcha, offering a gentle sweetness and a touch of salt for perfect balance."
+              data-price="RM 9.50">View More</button>
+            </div>
+
+            <div class="product-card" data-category="boiled">
+              <div class="product-image">
+                <img src="../img/CoffeeVanilla RicePuddingPretzel1.png" class="default-img" alt="">
+                <img src="../img/CoffeeVanilla RicePuddingPretzel2.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title">Coffee Vanilla Rice Pudding<br>Pretzel</h3>
+              <button class="explore-btn"
+              data-desc="Soft pretzel filled with creamy coffee vanilla rice pudding for a cozy, aromatic bite."
+              data-price="RM 8.50">View More</button>
+            </div>
+            
+            <div class="product-card" data-category="sweet">
+              <div class="product-image">
+                <img src="../img/chocostrawbeer_scone.png" class="default-img" alt="">
+                <img src="../img/chocostrawbeer_scone.png" class="hover-img" alt="">
+              </div>
+              <h3 class="product-title"> Cocoa Strawberry Scone</h3>
+              <button class="explore-btn"
+              data-desc="A rich, chocolatey scone made with cocoa and loaded with 80% dark chocolate chips, accented by sweet, tangy dried strawberries."
+              data-price="RM 8.50">View More</button>
+            </div>
+          </div>
+          
+          <div class="product-popup" id="productPopup">
+            <div class="popup-box">
+              <span class="popup-close">&times;</span>
+              <img id="popupImage" src="" alt="Product image">
+              <div class="popup-content">
+                <h2 class="popup-name" id="popupName">Pistachio Matcha Pretzel</h2>
+                <p class="popup-desc" id="popupDesc">
+                  Chewy matcha pretzel topped with crunchy pistachios and a nutty aroma.
+                </p>
+                <p class="popup-price" id="popupPrice">RM9.90</p>
+          
+                <div class="quantity-control">
+                  <button id="qtyMinus">−</button>
+                  <input type="number" id="popupQty" value="1" min="1">
+                  <button id="qtyPlus">+</button>
+                </div>
+          
+                <button class="popup-cart-btn">Add to cart</button>
+              </div>
+            </div>
+          </div>  
+      </section>
+
+      <!-- CART DRAWER -->
+       <div id="cartOverlay" class="cart-overlay">
+        <div id="cartDrawer" class="cart-drawer">
+          <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span id="closeCartDrawer" class="cart-close">&times;</span>
+          </div>
+          <div id="cartItems" class="cart-items">
+          </div>
+          <div class="cart-footer">
+            <p>Total: RM <span id="cartTotal">0.00</span></p>
+            <button id="checkoutBtn">Checkout</button>
+          </div>
+        </div>
+      </div>
+      
+      <section class="learn-section fade-in-target">
+        <div class="learn-container">
+          <div class="learn-text" >
+            <h2>Made Fresh, Shared with Love</h2>
+            <p>
+              From our handpicked ingredients to your favorite weekly specials freshness and flavor, every step of the way.
+            </p>
+            <a href="../html/home.html#chooseus" class="btn-learn">Explore More</a>
+          </div>
+      
+          <div class="learn-images">
+            <div class="img-grid">
+              <img src="../img/menu1.jpg" alt="Bowl of flour" class="img1">
+              <img src="../img/menu4.jpeg" alt="Bread baking" class="img2">
+              <img src="../img/menu2.jpg" alt="Sliced bread" class="img3">
+              <img src="../img/menu3.jpg" alt="Bread rack" class="img4">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section " style="background: linear-gradient(to bottom, #ffff 70%, #f1efeb 30%);">
+        <div class="cta-content">
+          <div class="cta-text fade-in-target">
+            <h2>Taste the Difference,<br>Contact Us Today.</h2>
+            <p>Fill it in and we'll take care of the rest!</p>
+            <a href="../html/contact.html" class="cta-button">Contact Now</a>
+          </div>
+          <div class="cta-icon fade-in-target">
+            <img src="../img/icon5-02.png" alt="">
+          </div>
+        </div>
+      </section>
+
+       <!-- Footer Section -->
+       <footer class="footer-section">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <a href="../html/home.html"><img src="../img/logo.jpg" alt="Bupang Bakery logo"></a>
+            <div class="social-icons">
+              <a href="https://wa.me/+60108875898" target="_blank" class="social-icon whatsapp">
+                <img src="../img/whatsapp.png" alt="whatsapp">
+              </a>
+              <a href="https://www.instagram.com/bupang.bakeee/" target="_blank" class="social-icon instagram">
+                <img src="../img/insta.png" alt="instagram">
+              </a>
+              <a href="https://www.facebook.com/bupang.bakeee/?_rdr" target="_blank" class="social-icon facebook">
+                <img src="../img/fb.png" alt="facebook">
+              </a>
+            </div>
+          </div>
+      
+          <div class="footer-links">
+            <h3>Quick link</h3>
+            <ul>
+              <li><a href="../html/home.html">Home</a></li>
+              <li><a href="../html/about.html">About</a></li>
+              <li><a href="../html/menu.html">Menu</a></li>
+              <li><a href="../html/other.html">Others</a></li>
+              <li><a href="../html/contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-newsletter">
+            <h3>Join our newsletter</h3>
+            <p>Stay up to date with our latest bread varieties, seasonal specials, and exclusive offers.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" id="email" placeholder="Enter your email address..." required>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        
+         <!-- Popup message -->
+         <div id="popupMessage" class="popup-message"></div>
+          
+         <div class="footer-copyright">
+           Copyright © 2024. Bupang Bakery. All rights reserved.
+         </div>
+       </footer>
+
+       <button id="backToTop" title="Go to top">
+         <i class="fa fa-chevron-up"></i>
+       </button>
+
+       <script src="../java.js"></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+          <script>
+            document.addEventListener("DOMContentLoaded", () => {
+              const filterButtons = document.querySelectorAll(".filter-btn");
+              const productCards = document.querySelectorAll(".product-card");
+            
+              filterButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                  // remove active class from all buttons
+                  filterButtons.forEach(btn => btn.classList.remove("active"));
+                  button.classList.add("active");
+            
+                  const category = button.getAttribute("data-category");
+            
+                  productCards.forEach(card => {
+                    if (category === "all" || card.dataset.category === category) {
+                      card.classList.remove("hidden");
+                    } else {
+                      card.classList.add("hidden");
+                    }
+                  });
+                });
+              });
+            });
+            
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                } else {
+                  entry.target.classList.remove("visible");
+                }
+              });
+            });
+            const targets = document.querySelectorAll('.fade-in-target');
+            targets.forEach((el) => observer.observe(el));
+
+            AOS.init({
+              duration: 1000,
+              once: false,
+              mirror: true
+              });
+            
+              
+
+              
+              </script>
+              </body>
+              </html>
+
+          
+    

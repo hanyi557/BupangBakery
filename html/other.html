@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" ,initial-scale=1.0>
+    <title>BUPANG BAKERY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+</head>
+<body>	
+    <div class="banner1">
+        <h1 class="ban1">Like us on Instagram and get RM5 off your first order!</h1>
+    </div>
+      
+      <nav class="navbar">
+        <div class="container">
+          <a href="../html/home.html" class="logo">
+            <img src="../img/logo.jpg" alt="logo">
+          </a>
+      
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      
+          <ul id="nav-links">
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/menu.html">Menu</a></li>
+            <li><a href="../html/other.html" class="active">Others</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+            <li class="cart-container">
+              <a href="#" id="cartIcon" class="cart-icon">
+                <i class="fa fa-shopping-cart" style="font-size:28px;color:#6ca96e;"></i>
+                <span id="cartCount">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- CART DRAWER -->
+      <div id="cartOverlay" class="cart-overlay">
+        <div id="cartDrawer" class="cart-drawer">
+          <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span id="closeCartDrawer" class="cart-close">&times;</span>
+          </div>
+          <div id="cartItems" class="cart-items">
+          </div>
+          <div class="cart-footer">
+            <p>Total: RM <span id="cartTotal">0.00</span></p>
+            <button id="checkoutBtn">Checkout</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="other-banner">
+        <h1 data-aos="zoom-in">OTHERS&nbsp;</h1>
+      </div>
+
+      <section class="reheat-section" >
+        <h2 class="fade-up">Reheat Tips</h2>
+        <div class="reheat-method fade-up">
+          <div class="method-line"></div>
+          <div class="method-title">Oven <br>(Crispy texture)</div>
+      
+          <div class="reheat-videos">
+            <video autoplay muted loop playsinline>
+              <source src="../video/motionheatingtips 2.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline>
+              <source src="../video/motionheatingtips 2_1.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline>
+              <source src="../video/motionheatingtips 2_3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="method-desc">
+            Preheat the oven to <strong>180°C</strong>. Lightly spray the bread with water, then heat for about <strong>5–8 minutes</strong> until the crust becomes crisp again.
+          </p>
+        </div>
+      
+        <!-- Steam Section -->
+        <div class="reheat-method fade-up">
+          <div class="method-line"></div>
+          <div class="method-title">Steam <br>(Chewy texture)</div>
+      
+          <div class="reheat-videos">
+            <video autoplay muted loop playsinline>
+              <source src="../video/steam1.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline>
+              <source src="../video/steam2.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop playsinline>
+              <source src="../video/steam3.mp4" type="video/mp4">
+            </video>
+          </div>
+    
+          <p class="method-desc">
+            Bring water to a boil, then lower to medium heat. Place the bread in a steamer for <strong>3–5 minutes</strong> until soft and warm with a chewy texture.
+          </p>
+    
+        </div>
+      </section>
+    
+      <!-- Quote Section -->
+      <section class="quote-section">
+        <div class="quote-container">
+          <p>Some things and thoughts about these things take forever, but breakfast shouldn't be one of it.</p>
+        </div>
+      </section>
+    
+      <section class="recipes-section">
+        <h2 data-aos="fade-down">Recipes</h2>
+      
+        <div class="recipes-wrapper" data-aos="fade-down">
+          <button class="arrow left" id="leftArrow">‹</button>
+      
+          <div class="recipes-container" id="recipesContainer">
+            <!-- Recipe 1 -->
+            <div class="recipe-card" 
+                 data-title="Avocado and Egg Sourdough Sandwich" 
+                 data-image="../img/recipe1.jpeg"
+                 data-prep="2 min" data-cook="5 min" data-total="7 min">
+              <img src="../img/recipe1.jpeg" alt="Avocado and Egg Sourdough Sandwich">
+              <p>Avocado and Egg<br>Sourdough Sandwich</p>
+      
+              <div class="recipe-data" style="display:none;">
+                <ul class="ingredients">
+                  <li>2 slices sourdough bread </li>
+                  <li>1 ripe avocado</li>
+                  <li>2 large eggs</li>
+                  <li>1 tbsp extra virgin olive oil </li>
+                  <li>Red pepper flakes</li>
+                </ul>
+                <ol class="instructions">
+                  <li>1. Heat olive oil in a non-stick pan over medium heat. </li>
+                  <li>2. Crack eggs into the pan, season with salt and pepper. </li>
+                  <li>3. Cook eggs for 2-3 minutes until whites are set but yolks are still runny. </li>
+                  <li>4. While eggs cook, toast sourdough slices until golden. </li>
+                  <li>5. Mash avocado onto one toast slice, season lightly with salt.</li>
+                  <li>6. Place cooked eggs on top of the avocado. </li>
+                  <li>7. Sprinkle with red pepper flakes for heat.  </li>
+                  <li>8. Top with the second toast slice. </li>
+                  <li>9. Cut in half and serve immediately. </li>
+                </ol>
+              </div>
+            </div>
+      
+            <!-- Recipe 2 -->
+            <div class="recipe-card" 
+                 data-title="Mediterranean Veggie Sourdough Sandwich"
+                 data-image="../img/recipe2.jpeg"
+                 data-prep="2 min" data-cook="9 min" data-total="11 min">
+              <img src="../img/recipe4.jpg" alt="Mediterranean Veggie Sourdough Sandwich">
+              <p>Classic Grilled Cheese Sourdough</p>
+      
+              <div class="recipe-data" style="display:none;">
+                <ul class="ingredients">
+                  <li>2 thick slices of sourdough bread</li>
+                  <li>56g sharp cheddar, freshly grated</li>
+                  <li>56g mozzarella, freshly grated</li>
+                  <li>2 tablespoons softened butter</li>
+                  <li>Salt and pepper</li>
+                </ul>
+                <ol class="instructions">
+                  <li>1. Warm the skillet over medium-low heat. </li>
+                  <li>2. While heating, mix freshly grated cheeses. </li>
+                  <li>3. Butter one side of each bread slice completely. </li>
+                  <li>4. Place the first slice butter-side down in a warm skillet. </li>
+                  <li>5. Add cheese mixture and sprinkle with salt. </li>
+                  <li>6. Top with the second slice, butter-side up. </li>
+                  <li>7. Cook for 4-5 minutes until golden brown underneath. </li>
+                  <li>8. Carefully flip using two spatulas.</li>
+                  <li>9. Cook another 3-4 minutes until golden and cheese is melted.</li>
+                </ol>
+              </div>
+            </div>
+      
+            <!-- Recipe 3 -->
+            <div class="recipe-card"
+                 data-title="Peanut Butter & Banana Sourdough Toastie"
+                 data-image="../img/recipe2.jpeg"
+                 data-prep="3 min" data-cook="4 min" data-total="7 min">
+              <img src="../img/recipe2.jpeg" alt="Peanut Butter & Banana Sourdough Toastie">
+              <p>Peanut Butter & Banana<br>Sourdough Toastie</p>
+      
+              <div class="recipe-data" style="display:none;">
+                <ul class="ingredients">
+                  <li>2 slices sourdough bread</li>
+                  <li>2 tbsps Peanut Butter</li>
+                  <li>1 ripe banana, sliced </li>
+                  <li>1 tbsp honey</li>
+                  <li>Butter</li>
+                  <li>Cinammon</li>
+                </ul>
+                <ol class="instructions">
+                  <li>1. Spread peanut butter on both slices.</li>
+                  <li>2. Sliced banana 3-4mm thick enough slices to cover bread but still have some peanut butter showing through.</li>
+                  <li>3. A pinch of cinnamon - sprinkled. </li>
+                  <li>4. Drizzle with honey. </li>
+                  <li>5. Cook both sides until golden.</li>
+                </ol>
+              </div>
+            </div>
+      
+            <!-- Recipe 4 -->
+            <div class="recipe-card"
+                 data-title="Chicken & Avocado Sourdough Sandwich"
+                 data-image="../img/recipe3.jpg"
+                 data-prep="15 min" data-cook="6 min" data-total="21 min">
+              <img src="../img/recipe3.jpg" alt="Chicken & Avocado Sourdough Sandwich">
+              <p>Chicken Pesto<br>Sourdough Sandwich</p>
+      
+              <div class="recipe-data" style="display:none;">
+                <ul class="ingredients">
+                  <li>2 slices sourdough bread</li>
+                  <li>1 cooked chicken breast, sliced</li>
+                  <li>2 tablespoons of pesto sauce</li>
+                  <li>2 slices of mozzarella cheese</li>
+                  <li>1 handful of fresh spinach leaves</li>
+                  <li>Salt and pepper to taste</li>
+                  <li>1 tablespoon of olive oil</li>
+                </ul>
+                <ol class="instructions">
+                  <li>1. Put a frying pan on a medium heat, brush one side of each slice of sourdough with olive oil.</li>
+                  <li>2. Spread pesto sauce evenly on the un-brushed side of both slices of bread.</li>
+                  <li>3. Put slices of chicken breast, mozzarella cheese and fresh spinach leaves on one slice of bread.</li>
+                  <li>4. Add salt and pepper to taste, then top with other slice of bread, pesto side down.</li>
+                  <li>5. Put the sandwich in the grill pan and cook for 3-4 minutes on each side or until the bread is lightly browned and the cheese is melted.</li>
+                  <li>6. Remove from pan, slice in half if desired, and serve immediately.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+      
+          <button class="arrow right" id="rightArrow">›</button>
+        </div>
+      
+        <!-- Modal -->
+        <div class="modal-overlay" id="modalOverlay">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 id="modalTitle">Recipe Name</h3>
+              <button class="close-btn" id="closeBtn">×</button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+                <div class="time-info">
+                  <div class="time-badge">
+                    <span class="time-label">PREP</span>
+                    <span class="time-value" id="prepTime">–</span>
+                  </div>
+                  <div class="time-badge">
+                    <span class="time-label">COOK</span>
+                    <span class="time-value" id="cookTime">–</span>
+                  </div>
+                  <div class="time-badge">
+                    <span class="time-label">TOTAL</span>
+                    <span class="time-value" id="totalTime">–</span>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-details">
+                <div class="ingredients-section">
+                  <h4>Ingredients</h4>
+                  <ul id="ingredientsList"></ul>
+                </div>
+                <div class="instructions-section">
+                  <h4>Instructions</h4>
+                  <div id="instructionsList"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-wrapper">
+        <div class="faq-section" id="faq">
+          <h2 class="fade-up">Frequently Asked Question</h2>
+          <div class="faq-container fade-up">
+            <div class="faq-item">
+              <button class="faq-question">Can I cancel an existing order that have been made?</button>
+              <div class="faq-answer">
+                <p>Cancellation or changes cannot be made after submitting the order, minimum 5 pcs or above.</p>
+              </div>
+            </div>
+        
+            <div class="faq-item">
+              <button class="faq-question">Is there a shipping limit for each order?</button>
+              <div class="faq-answer">
+                <p>The shipping price is limited to 15 pcs. If you order more than 15 pcs, you will need to pay an additional shipping fee. We will notify you separately.</p>
+              </div>
+            </div>
+        
+            <div class="faq-item">
+              <button class="faq-question">What delivery options are available?</button>
+              <div class="faq-answer">
+                <p>Standard and express delivery options are available depending on your location.</p>
+              </div>
+            </div>
+        
+            <div class="faq-item">
+              <button class="faq-question">Can I choose my delivery date?</button>
+              <div class="faq-answer">
+                <p>Yes, you can select your preferred delivery date during checkout.</p>
+              </div>
+            </div>
+        
+            <div class="faq-item">
+              <button class="faq-question">Do you deliver to all parts of Malaysia?</button>
+              <div class="faq-answer">
+                <p>Yes, we deliver to most regions across Malaysia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="cta-section" style="background: linear-gradient(to bottom, #D6FFD7 70%, #f1efeb 30%);">
+        <div class="cta-content">
+          <div class="cta-text fade-in-target">
+            <h2>Taste the Difference,<br>Contact Us Today.</h2>
+            <p>Fill it in and we'll take care of the rest!</p>
+            <a href="../html/contact.html" class="cta-button">Contact Now</a>
+          </div>
+          <div class="cta-icon fade-in-target">
+            <img src="../img/icon5-02.png" alt="">
+          </div>
+        </div>
+      </section>
+      
+      <footer class="footer-section">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <a href="../html/home.html"><img src="../img/logo.jpg" alt="Bupang Bakery logo"></a>
+            <div class="social-icons">
+              <a href="https://wa.me/+60108875898" target="_blank" class="social-icon whatsapp">
+                <img src="../img/whatsapp.png" alt="whatsapp">
+              </a>
+              <a href="https://www.instagram.com/bupang.bakeee/" target="_blank" class="social-icon instagram">
+                <img src="../img/insta.png" alt="instagram">
+              </a>
+              <a href="https://www.facebook.com/bupang.bakeee/?_rdr" target="_blank" class="social-icon facebook">
+                <img src="../img/fb.png" alt="facebook">
+              </a>
+            </div>
+          </div>
+      
+          <div class="footer-links">
+            <h3>Quick link</h3>
+            <ul>
+              <li><a href="../html/home.html">Home</a></li>
+              <li><a href="../html/about.html">About</a></li>
+              <li><a href="../html/menu.html">Menu</a></li>
+              <li><a href="../html/other.html">Others</a></li>
+              <li><a href="../html/contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-newsletter">
+            <h3>Join our newsletter</h3>
+            <p>Stay up to date with our latest bread varieties, seasonal specials, and exclusive offers.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" id="email" placeholder="Enter your email address..." required>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      
+        <!-- Popup message -->
+        <div id="popupMessage" class="popup-message"></div>
+      
+        <div class="footer-copyright">
+          Copyright © 2024. Bupang Bakery. All rights reserved.
+        </div>
+      </footer>
+
+      <button id="backToTop" title="Go to top">
+        <i class="fa fa-chevron-up"></i>
+      </button>
+
+      <script src="../java.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                } else {
+                  entry.target.classList.remove("visible");
+                }
+              });
+            });
+
+            const targets = document.querySelectorAll('.fade-in-target');
+            targets.forEach((el) => observer.observe(el));
+          AOS.init({
+            duration: 1200,
+            once: false,   
+            mirror: true,   
+            easing: 'ease-in-out', 
+          });
+      
+          AOS.init({
+          duration: 1000,
+          once: false,
+          mirror: true
+        });
+        </script>
+</body>
+</html>
